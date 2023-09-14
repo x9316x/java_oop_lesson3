@@ -1,11 +1,9 @@
 package geek_java_oop_lesson3;
 
-/**
- * Обычный рабочий (фулл-тайм)
- */
-public class Worker extends Employee{
-    public Worker(String name, String surName, double salary) {
-        super(name, surName, salary);
+public class Worker extends Employee {
+
+    public Worker(String name, String surName, double salary, int age) {
+        super(name, surName, salary, age);
     }
 
     @Override

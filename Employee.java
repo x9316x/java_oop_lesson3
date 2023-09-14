@@ -1,37 +1,20 @@
 package geek_java_oop_lesson3;
 
-/**
- * Работник
- */
 public abstract class Employee implements Comparable<Employee> {
 
-    /**
-     * Имя
-     */
     protected String name;
-
-    /**
-     * Фамилия
-     */
     protected String surName;
-
-    /**
-     * Ставка заработной платы
-     */
     protected double salary;
+    protected int age; // новое поле "возраст" для дальнейшей сортировки
 
-    /**
-     * Расчет среднемесячной заработной платы
-     * @return
-     */
-    public abstract double calculateSalary();
-
-
-    public Employee(String name, String surName, double salary) {
+    public Employee(String name, String surName, double salary, int age) {
         this.name = name;
         this.surName = surName;
         this.salary = salary;
+        this.age = age;
     }
+
+    public abstract double calculateSalary();
 
     @Override
     public String toString() {
